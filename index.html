@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="se">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uppgift1</title>
+
+<link rel="stylesheet" href="style1.css">
+</head>
+<body>   
+    <header>
+    <div class="Title">
+               <h1>- UPPGIFT_1 -</h1>
+               <h2>- FRÅGA_1 -</h2>
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">Sidan_1 / Fråga_1</a></li>
+            <li><a href="index2.html">Sidan_2 / Fråga_2</a></li>
+            <li><a href="index3.html">Sidan_3 / Fråga_3</a></li>
+        </ul>
+    </div>
+</header>
+            <h3>F1. Datakommunikation och webbadresser:</h3>
+    <h3><b>Delfråga 1:</b> Vilken roll spelar <b> DNS servern </b> när en användare navigerar till en webbsida?</h3>
+    <p>DNS (Domain Name System) konverterar mänskligt läsbara domännamn till maskinläsbara IP-adresser.
+        När en användare skriver in en adress till en webbplats i adressfältet i sin webbläsare och trycker 
+        på enter, inträffar ett antal processer som gör att webbplatsen kan öppnas på skärmen. Denna process 
+        börjar med en DNS-fråga och slutar med att sidan laddas i användarens webbläsare.</p>
+    <img src="https://pawait.africa/wp-content/uploads/2021/06/dnspawait.jpg" alt="">
+
+    <h4>Steg 1:</h4>
+    <p>När en användare anger en webbadress i en webbläsare skickar webbläsaren en begäran till DNS-servern 
+        (Domain Name System). DNS-servrar är ansvariga för att lösa domännamnet till en IP-adress som kommer 
+        att användas för att kommunicera med webbplatsen. Det är viktigt att notera att webbadressen som vi 
+        ser i adressfältet kallas ett domännamn. DNS-servrar fungerar som en elektronisk "telefonbok" som 
+        löser domännamn till IP-adresser.</p>
+    <h4>Steg 2:</h4>
+    <p>Efter att ha mottagit serverns IP-adress upprättar webbläsaren en anslutning till den servern med hjälp 
+        av HTTP-protokollet (eller HTTPS om webbplatsen använder en säker anslutning). Denna process involverar 
+        upprättande av en trevägshandskakning mellan webbläsaren och servern: webbläsaren skickar en 
+        synkronisering (SYN), servern svarar med en bekräftelse och skickar sin synkronisering (SYN+ACK), 
+        och sedan bekräftar webbläsaren anslutningen (ACK).</p>
+    <h4>Steg 3:</h4>
+    <p>När anslutningen har upprättats, börjar webbläsaren att ladda sidan. Den skickar en förfrågan till 
+        servern och ber om HTML-koden för sidan. Servern svarar i sin tur genom att skicka den begärda 
+        HTML-koden. Webbläsaren börjar bearbeta och tolka den mottagna koden, vilket skapar en visuell 
+        representation av webbplatsen på användarens skärm.</p>
+
+<h3><b>Delfråga 2:</b> 	Beskriv kortfattat de steg som klienten och servern tillsammans går 
+    igenom när en webbsida bestående av filerna <u> <i>index.html</i></u>, <i>style.css</i> och <i><u>example.jpg</u></i> öppnas.</h3>
+<p>Webbläsare kommunicerar med webbservrar med hjälp av Hypertext Transfer Protocol (HTTP). När man klickar
+     på en länk på en sida, fyller i ett formulär eller gör en sökning skickar webbläsaren en HTTP-förfrågan till servern.</p>
+<p>En sökväg (URL) som identifierar målservern och resursen (till exempel en HTML-fil, en specifik datapunkt på en server 
+    eller ett verktyg att köra).</p>
+<p>En metod som bestämmer den nödvändiga åtgärden (till exempel hämta en fil, spara eller uppdatera vissa data).</p>
+<p>Webbservrar väntar på begärandemeddelanden från klienter, bearbetar dem när de anländer och svarar på webbläsaren 
+    via ett HTTP-svarsmeddelande.</p>
+<p>När HTML-sidan har returnerats renderas den av webbläsaren. Under denna process kan webbläsaren upptäcka länkar 
+    till andra resurser (till exempel länkar en HTML-sida vanligtvis till JavaScript- och CSS-filer) och skicka 
+    separata HTTP-förfrågningar för att ladda ner dessa filer.</p>
+
+<h3> Delfråga 3:	Beskriv de delar som följande url består av:</h3>
+  <h4>o	https://medieteknik.lnu.se:443/wt1/index.html#intro</h4>  
+   <h4>o	Ta upp alla delar som åtskiljs av /, : och #</h4> 
+    <p><b><i>https://medieteknik.lnu.se:443/wt1/index.html#intro</i></b> där:</p> 
+        <p><i><b>"https://"</b></i> -kallas "PROTOKOL"</p>
+        <p><i><b>medieteknik.lnu.se:443 </b></i></p>
+        <img src="https://fotohosting.su/images/2024/01/30/uppgift1HaykZakaryan.jpg" alt="">
+        Där i länken, (https://medieteknik.lnu.se:443/wt1/index.html#intro) med reserverade tecken  #  talar om att webbläsaren ska hoppa till stycket "intro" 
+        <p>Med ett  #  börjar en ankarlänk så kallas jumplink. Syftet med ankare är att tillhandahålla ett 
+            sätt att navigera till en specifik plats i innehållet på en webbsida. Denna information används 
+            endast lokalt i webbläsaren och skickas aldrig till servern.  </p>
+        <p> Tecknet <b>snedstreck /</b> i URL:en används som en separator mellan domännamnet och sökvägen till en specifik resurs på webbservern.</p>
+        <p>Tecknet <b>kolon :</b>  är ett tecken som är reserverat för att ange protokoll och port.</p>
+    
+        <h2>Frågor</h2>
+        <h4>F1. Datakommunikation och webbadresser</h4>
+        <p>1. Vilken roll spelar DNS servern när en användare navigerar till en webbsida?</p>
+        <p>2. Beskriv kortfattat de steg som klienten och servern tillsammans går igenom när en webbsida bestående av filerna index.html, style.css och example.jpg öppnas.</p>
+        <p>3.Beskriv de delar som följande url består av: </p>
+        <table>o https://medieteknik.lnu.se:443/wt1/index.html#intro</table>
+        <table>o Ta upp alla delar som åtskiljs av /, : och #</table>
+
+        <h4>F2. HTML</h4>
+        <p>1. Vad består en tagg respektive ett attribut av? Hur förhåller de sig till ett element?</p>
+        <p>2. Vad är en entitet? Lägg även in ett exempel på en entitet i din HTML-kod i svaret på den här frågan.</p>
+        <p>3. Vad är skillnaden mellan ett block-element och ett inline-element?</p>
+
+        <h4>F3. CSS</h4>
+        <p>1. Vad är en regel i CSS och vad består den av?</p>
+        <p>2. Vad är skillnaden mellan id och class? När bör man använda id respektive class?</p>
+
+</body>
+</html>
